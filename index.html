@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giri P - AI & Full-Stack Architect</title>
+    <!-- Premium Fonts: Inter for readability, Orbitron for Stark aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- Custom Glowing Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- 3D Canvas Background (Arc Reactor) -->
+    <div id="canvas-container"></div>
+
+    <!-- Stark OS Noise Overlay for Premium Texture -->
+    <div class="noise-overlay"></div>
+
+    <!-- Sleek Jarvis Interface -->
+    <div id="jarvis-ui" class="glass-panel">
+        <button id="btn-jarvis"><i class="fas fa-microphone"></i> ACTIVATE JARVIS</button>
+        <div id="jarvis-visualizer" class="hidden">
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        </div>
+        <div id="jarvis-input-area" class="hidden">
+            <input type="text" id="visitor-name" placeholder="Enter Authorization Name..." autocomplete="off">
+            <button id="submit-name"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Main Scrolling Container -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Hero Section -->
+            <section class="hero section-padding">
+                <div class="hero-inner">
+                    <p class="hero-subtitle fade-up">SYSTEM INITIALIZED // GIRI_PROFILE</p>
+                    <h1 class="hero-title">
+                        <span class="split-text">ENGINEERING</span><br>
+                        <span class="split-text highlight-gold">THE FUTURE OF AI</span><br>
+                        <span class="split-text">& WEB SYSTEMS</span>
+                    </h1>
+                    <div class="hero-details fade-up">
+                        <p>FULL-STACK ARCHITECT & DATA SCIENTIST</p>
+                        <div class="contact-badges">
+                            <span><i class="fas fa-map-marker-alt"></i> Coimbatore</span>
+                            <span><i class="fas fa-envelope"></i> ggirii4488@gmail.com</span>
+                            <a href="https://linkedin.com/in/giriii" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://github.com/Girii4" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About / Executive Summary -->
+            <section class="about section-padding">
+                <div class="glass-card stagger-card">
+                    <h2 class="section-heading">01 // EXECUTIVE_SUMMARY</h2>
+                    <p class="lead-text">
+                        I bridge the gap between complex Artificial Intelligence models and seamless, high-performance web applications. 
+                    </p>
+                    <p class="body-text">
+                        As a Final-year B.Tech AI & Data Science student at SNS College of Engineering, I specialize in leveraging Large Language Models, React, and Python to architect solutions that drastically reduce friction in human-computer interaction. From leading AI automation internships to ranking Top 50 nationally in AngelHack India 2024, I build scalable products driven by agile methodologies and clean coding practices.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Continuous Skills Marquee -->
+            <section class="skills">
+                <div class="marquee-container">
+                    <div class="marquee-content">
+                        <span>PYTHON</span><span class="dot">•</span>
+                        <span>REACT</span><span class="dot">•</span>
+                        <span>NODE.JS</span><span class="dot">•</span>
+                        <span>AWS CLOUD</span><span class="dot">•</span>
+                        <span>SQL</span><span class="dot">•</span>
+                        <span>LLM INTEGRATION</span><span class="dot">•</span>
+                        <span>DOCKER</span><span class="dot">•</span>
+                        <span>ELK STACK</span><span class="dot">•</span>
+                    </div>
+                    <!-- Duplicate for infinite scroll -->
+                    <div class="marquee-content" aria-hidden="true">
+                        <span>PYTHON</span><span class="dot">•</span>
+                        <span>REACT</span><span class="dot">•</span>
+                        <span>NODE.JS</span><span class="dot">•</span>
+                        <span>AWS CLOUD</span><span class="dot">•</span>
+                        <span>SQL</span><span class="dot">•</span>
+                        <span>LLM INTEGRATION</span><span class="dot">•</span>
+                        <span>DOCKER</span><span class="dot">•</span>
+                        <span>ELK STACK</span><span class="dot">•</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects section-padding">
+                <h2 class="section-heading fade-up">02 // ARCHITECTED_SOLUTIONS</h2>
+                
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="glass-card project-card stagger-card">
+                        <div class="project-header">
+                            <h3>AI Coder</h3>
+                            <span class="impact-badge">300% Productivity Boost</span>
+                        </div>
+                        <p class="project-desc">A highly advanced AI coding assistant that transforms natural language prompts into full-stack application code with instant, live rendering.</p>
+                        <div class="tech-stack">
+                            <span>React</span><span>OpenAI GPT</span><span>CodeMirror</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="glass-card project-card stagger-card">
+                        <div class="project-header">
+                            <h3>Easy SQL</h3>
+                            <span class="impact-badge">70% Time Reduction</span>
+                        </div>
+                        <p class="project-desc">A natural language to SQL query generator. Designed to completely abstract complex database queries into optimized SQL commands for non-technical users.</p>
+                        <div class="tech-stack">
+                            <span>LLM</span><span>Python</span><span>React</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="glass-card project-card stagger-card">
+                        <div class="project-header">
+                            <h3>PrepIQ</h3>
+                            <span class="impact-badge">AI-Driven Prep</span>
+                        </div>
+                        <p class="project-desc">An intelligent placement preparation platform. Utilizes deep NLP algorithms to tailor aptitude training and deliver real-time performance analytics.</p>
+                        <div class="tech-stack">
+                            <span>NLP</span><span>Recommendation Engine</span><span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education & Achievements -->
+            <section class="education section-padding">
+                <div class="glass-card stagger-card">
+                    <h2 class="section-heading">03 // CREDENTIALS</h2>
+                    
+                    <div class="edu-block">
+                        <h3>B.Tech Artificial Intelligence & Data Science</h3>
+                        <p class="edu-meta">SNS College of Engineering | CGPA: 7.5/10</p>
+                    </div>
+
+                    <div class="achievements-grid">
+                        <div class="achieve-item">
+                            <i class="fas fa-trophy"></i>
+                            <h4>Top 50 Nationally</h4>
+                            <p>AngelHack India 2024. Built an AI productivity app out of 500+ competing teams.</p>
+                        </div>
+                        <div class="achieve-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <h4>AI Workshop Speaker</h4>
+                            <p>Delivered deep-dive sessions on AI Automation to over 150+ engineers.</p>
+                        </div>
+                        <div class="achieve-item">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Advanced Certifications</h4>
+                            <p>Google Analytics (Advanced) & HackerRank SQL (Advanced).</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <footer class="footer">
+                <p>DESIGNED & ENGINEERED BY GIRI P. // STARK OS INTERFACE</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Three.js Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="three-scene.js"></script>
+    <!-- Main GSAP Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
